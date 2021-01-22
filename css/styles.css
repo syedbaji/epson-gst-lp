@@ -1,0 +1,181 @@
+@font-face {
+    font-family: 'HelveticaNeue-Bold';
+    src: url('fonts/HelveticaNeue-Bold.eot');
+    src: url('fonts/HelveticaNeue-Bold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/HelveticaNeue-Bold.svg#HelveticaNeue-Bold') format('svg'),
+         url('fonts/HelveticaNeue-Bold.ttf') format('truetype'),
+         url('fonts/HelveticaNeue-Bold.woff') format('woff'),
+         url('fonts/HelveticaNeue-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+.font-HelveticaNeue-Bold{
+    font-family: 'HelveticaNeue-Bold';
+}
+@font-face {
+    font-family: 'HelveticaNeue-Roman';
+    src: url('fonts/HelveticaNeue-Roman.eot');
+    src: url('fonts/HelveticaNeue-Roman.eot?#iefix') format('embedded-opentype'),
+         url('fonts/HelveticaNeue-Roman.svg#HelveticaNeue-Roman') format('svg'),
+         url('fonts/HelveticaNeue-Roman.ttf') format('truetype'),
+         url('fonts/HelveticaNeue-Roman.woff') format('woff'),
+         url('fonts/HelveticaNeue-Roman.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+.font-HelveticaNeue-Roman{
+    font-family: 'HelveticaNeue-Roman';
+}
+@font-face {
+    font-family: 'HelveticaNeueLTStd-Bd';
+    src: url('fonts/HelveticaNeueLTStd-Bd.eot');
+    src: url('fonts/HelveticaNeueLTStd-Bd.eot?#iefix') format('embedded-opentype'),
+         url('fonts/HelveticaNeueLTStd-Bd.svg#HelveticaNeueLTStd-Bd') format('svg'),
+         url('fonts/HelveticaNeueLTStd-Bd.ttf') format('truetype'),
+         url('fonts/HelveticaNeueLTStd-Bd.woff') format('woff'),
+         url('fonts/HelveticaNeueLTStd-Bd.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+.font-HelveticaNeueLTStd-Bd{
+    font-family: 'HelveticaNeueLTStd-Bd';
+}
+body{
+    font-family: 'HelveticaNeue-Roman';
+}
+.navbar-brand{
+    max-width: 120px;
+}
+.bg-blue{
+    background: #4e75d2;
+}
+.color-blue{
+    color: #4e75d2;
+}
+h1{
+    color: #008cd2;
+    line-height: normal;
+    font-weight: 700;
+}
+.contactFormMain {
+    background-color: #5c74ce;
+    padding: 20px;
+}
+.contactFormMain .heading {
+    font-family: Arial;
+    color: #fff;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+.contactFormMain .sub-heading {
+    font-family: Arial;
+    color: #fff;
+    font-size: 12px;
+    line-height: 18px;
+}
+.contactFormMain input[type="text"].error, .contactFormMain input[type="email"].error, .contactFormMain select.error, .contactFormMain textarea.error, .contactFormMain input[type="text"]:focus, .contactFormMain input[type="email"]:focus, .contactFormMain select:focus, .contactFormMain textarea:focus {
+    border: 1px solid #fff !important;
+    outline: none !important;
+}
+.contactFormMain input[type="text"], .contactFormMain input[type="email"], .contactFormMain select, .contactFormMain textarea {
+    font-family: Arial;
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #333;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.contactFormMain input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: 0;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 8px 20px;
+    width: 100%;
+    margin-top: 0px;
+}
+.product-items .bg-1 {
+    background-image: linear-gradient(to right, #3076d8 , #8387ac);
+}
+.product-items .bg-2 {
+    background-image: linear-gradient(to right, #7c85b0 , #bd9190);
+}
+.product-items .bg-3 {
+    background-image: linear-gradient(to right, #6c81b8 , #b08f96);
+}
+.product-items .bg-4 {
+    background-image: linear-gradient(to right, #aa8e9a ,#d79682);
+}
+footer {
+    background: #d3cfd0;
+}
+.footer-content p {
+    font-size: 17px;
+}
+.footer-logo a {
+    color: black;
+}
+.footer-icon i {
+    color: #3d5a98;
+}
+.footer-icon a {
+    color: black;
+}
+footer .icon-col {
+    border-top: 2px solid black;
+}
+.navbar-dark .navbar-toggler{
+    border-radius: 5px;
+}
+#layer1{
+    z-index: 9999;
+}
+/* // Extra small devices (portrait phones, less than 576px) */
+/* // No media query since this is the default in Bootstrap */
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .gst-banner-section{
+        background: url(../images/banner-left-img.png) no-repeat left top / 90%;
+    }
+    .invisible-md{
+        visibility: hidden;
+    }
+    .font-md-40{
+        font-size: 40px;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    h1{
+        line-height: 45px;
+    }
+    .font-lg-40{
+        font-size: 40px;
+    }
+    .invisible-lg{
+        visibility: hidden;
+    }
+    .bsr-lg-1{
+        border-right: solid 1px #000000;
+    }
+    .gst-banner-section{
+        background: url(../images/banner-left-img.png) no-repeat left top / 35%;
+    }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+@media (min-width: 1440px) {
+    .dummyheight{
+        min-height: 680px;
+    }
+}
