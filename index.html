@@ -11,6 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
     <link rel="stylesheet" href="css/custom-styles.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -58,7 +59,8 @@
                             </div>
                             <div class="col-lg-7 p-0 column2 right-column py-5">
                                 <div class="col-lg-12 p-lg-0 px-lg-5">
-                                    <h1 class="font-26 font-md-40 mb-5 pb-lg-5 font-HelveticaNeueLTStd-Bd">GST-COMPLIANT CLARITY FOR SALES WITHOUT
+                                    <h1 class="font-26 font-md-40 mb-5 pb-lg-5 font-HelveticaNeueLTStd-Bd">GST-COMPLIANT
+                                        CLARITY FOR SALES WITHOUT
                                         A BREAK</h1>
                                     <div class="col-lg-12 p-0">
                                         <img src="images/printer-group.png" class="img-fluid" alt="">
@@ -79,9 +81,12 @@
                                             <img class="img-fluid" src="images/pigment-ink-technology.jpg" alt="">
                                         </div>
                                         <div class="card-col-text bg-1 p-4">
-                                            <h3 class="text-white font-weight-bold font-20 font-lg-18 font-HelveticaNeue-Bold">Pigment ink
+                                            <h3
+                                                class="text-white font-weight-bold font-20 font-lg-18 font-HelveticaNeue-Bold">
+                                                Pigment ink
                                                 technology</h3>
-                                            <p class="text-white font-HelveticaNeue-Roman">Razor-sharp,<br> Waterproof prints</p>
+                                            <p class="text-white font-HelveticaNeue-Roman">Razor-sharp,<br> Waterproof
+                                                prints</p>
                                         </div>
                                     </div>
                                 </div>
@@ -91,9 +96,12 @@
                                             <img class="img-fluid" src="images/prints-at-1200-dpi.jpg" alt="">
                                         </div>
                                         <div class="card-col-text bg-2 p-4">
-                                            <h3 class="text-white font-weight-bold font-20 font-lg-18 font-HelveticaNeue-Bold">Prints at 1200
+                                            <h3
+                                                class="text-white font-weight-bold font-20 font-lg-18 font-HelveticaNeue-Bold">
+                                                Prints at 1200
                                                 dpi</h3>
-                                            <p class="text-white font-HelveticaNeue-Roman">High-resolution, <br> ready-to-scan prints</p>
+                                            <p class="text-white font-HelveticaNeue-Roman">High-resolution, <br>
+                                                ready-to-scan prints</p>
                                         </div>
                                     </div>
                                 </div>
@@ -103,10 +111,13 @@
                                             <img class="img-fluid" src="images/prints-starting-at-just.jpg" alt="">
                                         </div>
                                         <div class="card-col-text bg-3 p-4">
-                                            <h3 class="text-white font-weight-bold font-20 font-lg-18 font-HelveticaNeue-Bold">Prints starting
+                                            <h3
+                                                class="text-white font-weight-bold font-20 font-lg-18 font-HelveticaNeue-Bold">
+                                                Prints starting
                                                 <br> at just 12 paise<sup>1</sup>
                                             </h3>
-                                            <p class="text-white font-HelveticaNeue-Roman">Svaing no matter the volume</p>
+                                            <p class="text-white font-HelveticaNeue-Roman">Svaing no matter the volume
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -116,7 +127,9 @@
                                             <img class="img-fluid" src="images/genuine-ink-bottles.jpg" alt="">
                                         </div>
                                         <div class="card-col-text bg-4 p-4">
-                                            <h3 class="text-white font-weight-bold font-20 font-lg-18 font-HelveticaNeue-Bold">Genuine ink
+                                            <h3
+                                                class="text-white font-weight-bold font-20 font-lg-18 font-HelveticaNeue-Bold">
+                                                Genuine ink
                                                 bottles and <br> packs starting from
                                                 Rs.699<sup>2</sup></h3>
                                             <p class="text-white font-HelveticaNeue-Roman">Low cost per consumable</p>
@@ -370,15 +383,15 @@
                                         </tbody>
                                     </table>
                                     <script>
-                                        $(document).ready(function () {
-                                            $(document).on('change', 'input#myCheck[type="checkbox"]', function (e) {
-                                                if ($(this).prop('checked')) {
-                                                    $('.sub-button').removeClass('disabled');
-                                                } else {
-                                                    $('.sub-button').addClass('disabled');
-                                                }
-                                            });
-                                        });
+                                        // $(document).ready(function () {
+                                        //     $(document).on('change', 'input#myCheck[type="checkbox"]', function (e) {
+                                        //         if ($(this).prop('checked')) {
+                                        //             $('.sub-button').removeClass('disabled');
+                                        //         } else {
+                                        //             $('.sub-button').addClass('disabled');
+                                        //         }
+                                        //     });
+                                        // });
                                     </script>
                                 </form>
                             </div>
@@ -418,11 +431,70 @@
     </footer>
     <script>
         $(document).ready(function () {
+            $("#contactFormMobile").validate({
+                rules: {
+                    fullname: "required",
+                    pno: {
+                        required: true,
+                        minlength: 10
+                    },
+                    state: {
+                        required: true
+                    },
+                    district: {
+                        required: true
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    agree: "required"
+                },
+                messages: {
+                    firstname: "Please enter your firstname",
+                    lastname: "Please enter your lastname",
+                    username: {
+                        required: "Please enter a username",
+                        minlength: "Your username must consist of at least 2 characters"
+                    },
+                    password: {
+                        required: "Please provide a password",
+                        minlength: "Your password must be at least 5 characters long"
+                    },
+                    confirm_password: {
+                        required: "Please provide a password",
+                        minlength: "Your password must be at least 5 characters long",
+                        equalTo: "Please enter the same password as above"
+                    },
+                    email: "Please enter a valid email address",
+                    agree: "Please accept our policy"
+                },
+                errorElement: "em",
+                errorPlacement: function (error, element) {
+                    // Add the `invalid-feedback` class to the error element
+                    error.addClass("invalid-feedback");
+
+                    if (element.prop("type") === "checkbox") {
+                        error.insertAfter(element.next("label"));
+                    } else {
+                        error.insertAfter(element);
+                    }
+                },
+                highlight: function (element, errorClass, validClass) {
+                    $(element).addClass("is-invalid").removeClass("is-valid");
+                },
+                unhighlight: function (element, errorClass, validClass) {
+                    $(element).addClass("is-valid").removeClass("is-invalid");
+                }
+            });
+
+
+
             $("#layer1,#layer2").animate({ "marginTop": "24px" });
             function scrollForm() {
                 if ($(window).width() >= 825) {
                     if ($(this).scrollTop() > 80 && $(this).scrollTop() < 6900) {
-                        $("#layer1,#layer2").stop().css('position', 'absolute').animate({ "marginTop": ($(window).scrollTop() + 20)-80 + "px" }, "normal");
+                        $("#layer1,#layer2").stop().css('position', 'absolute').animate({ "marginTop": ($(window).scrollTop() + 20) - 80 + "px" }, "normal");
                     } else {
                         $("#layer1,#layer2").stop().css('position', 'absolute').animate({ "marginTop": "24px" }, "normal");
                     }
