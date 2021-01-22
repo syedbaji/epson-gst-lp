@@ -405,11 +405,11 @@
         <div class="container p-0">
             <div class="col-lg-9 mr-auto">
                 <div class="col-sm-12 col-lg-12 p-3 footer-content">
-                    <p class="m-0">I For cost-per-print calculations, visit epson.co.in/parameters (Applicable only for MI 170). 2Applicable only for MI 170. Prices are subject
-                        to change without prior notice. 86,000 pages (MI 1 70) from the 2nd Ink Bottle onwards; The page yield with the bundled Ink bottle will be
-                        less than 6,000 pages / 40,000 pages (M2598) from the 2nd Ink Pack onwards. The page yield with the Ink packs will be less than 1 ,OOO
-                        pages. 43 years or 100,000 pages (MI 1 70) whichever comes first / 1 year or 150,000 pages (M2598) whichever comes first. Including
-                        printhead. Applicable only for MI 100, MI 120, MI i 40, MI 1 70, Mi 180, M2i 10, M2120, M2140, M2170, M3140, M3170 and M3180. </p>
+                    <p class="m-0"><sup>1</sup>For cost-per-print calculations, visit epson.co.in/parameters (Applicable only for MI 170). <sup>2</sup>Applicable only for M1170. Prices are subject
+                        to change without prior notice.<sup>3</sup>6000 pages (M1170) from the 2nd Ink Bottle onwards; The page yield with the bundled Ink bottle will be
+                        less than 6,000 pages / 40,000 pages (M2598) from the 2nd Ink Pack onwards. The page yield with the Ink packs will be less than 1,000
+                        pages. <sup>4</sup>3 years or 100,000 pages (M1170) whichever comes first / 1 year or 150,000 pages (M2598) whichever comes first. Including
+                        printhead. Applicable only for M1100, M1120, M1140, M1170, M1180, M2110, M2120, M2140, M2170, M3140, M3170 and M3180. </p>
                 </div>
                 <div
                     class="icon-col col-sm-12 col-lg-12 col-md-12 d-flex flex-wrap flex-row p-0 justify-content-between">
@@ -450,6 +450,9 @@
                     },
                     interested: {
                         required: true
+                    },
+                    verificationcode:{
+                        required: true
                     }
                     // agree: "required"
                 },
@@ -470,6 +473,7 @@
                     },
                     email: "Please enter valid email id",
                     // agree: "Please accept our policy"
+                    verificationcode: "Please enter verification code"
                 },
                 errorElement: "em",
                 errorPlacement: function (error, element) {
