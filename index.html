@@ -164,9 +164,9 @@
                                     <input type="hidden" name="gclid" value="">
                                     <table width="100%" border="0" cellpadding="2" cellspacing="2" class="formTbl">
                                         <tbody>
-                                            <tr>
+                                            <!-- <tr>
                                                 <td align="left" class="errormsg" id="errormsg"></td>
-                                            </tr>
+                                            </tr> -->
                                             <tr>
                                                 <td align="left" valign="middle" class="normal_txt">
                                                     <div class="heading">Want to know more</div>
@@ -448,26 +448,28 @@
                         required: true,
                         email: true
                     },
-                    agree: "required"
+                    interested: {
+                        required: true
+                    }
+                    // agree: "required"
                 },
                 messages: {
-                    firstname: "Please enter your firstname",
-                    lastname: "Please enter your lastname",
-                    username: {
-                        required: "Please enter a username",
-                        minlength: "Your username must consist of at least 2 characters"
+                    fullname: "Please enter valid name",
+                    pno: {
+                        required: "Please enter valid contact no",
+                        minlength: "Your username must consist of at least 10 characters"
                     },
-                    password: {
-                        required: "Please provide a password",
-                        minlength: "Your password must be at least 5 characters long"
+                    state: {
+                        required: "Please enter state"
                     },
-                    confirm_password: {
-                        required: "Please provide a password",
-                        minlength: "Your password must be at least 5 characters long",
-                        equalTo: "Please enter the same password as above"
+                    district: {
+                        required: "Please enter district"
                     },
-                    email: "Please enter a valid email address",
-                    agree: "Please accept our policy"
+                    interested: {
+                        required: "Please select interested in"
+                    },
+                    email: "Please enter valid email id",
+                    // agree: "Please accept our policy"
                 },
                 errorElement: "em",
                 errorPlacement: function (error, element) {

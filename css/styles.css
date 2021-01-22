@@ -59,7 +59,7 @@ h1{
 }
 .contactFormMain {
     background-color: #5c74ce;
-    padding: 20px;
+    padding: 14px;
 }
 .contactFormMain .heading {
     font-family: Arial;
@@ -134,6 +134,11 @@ footer .icon-col {
 }
 #layer1{
     z-index: 9999;
+}
+.invalid-feedback{
+    margin-top: 0px !important;
+    font-style: normal !important;
+    color: #ff0000;
 }
 /* // Extra small devices (portrait phones, less than 576px) */
 /* // No media query since this is the default in Bootstrap */
